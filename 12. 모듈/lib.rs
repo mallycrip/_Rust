@@ -15,3 +15,13 @@ mod server;
 // mod server {
 //     // contents of server.rs
 // }
+
+pub mod something { // 다음과 같이 pub를 사용하여 public으로 만들 수 있다.
+    pub fn connect() {
+
+    }    
+}
+
+// 비공개 규칙이 존재한다
+// 만일 어떤 아이템이 공개라면, 이는 부모 모듈의 어디에서건 접근이 가능하다.
+// 만일 어떤 아이템이 비공개라면, 같은 파일 내에 있는 부모 모듈 및 이 부모의 자식 모듈에서만 접근이 가능하다.
